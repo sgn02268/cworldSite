@@ -9,7 +9,7 @@
 <div style="text-align:center; margin:0 auto; margin-top:200px;">
 <span style="font-size:3em; font-weight:bold;">존재하지 않는 파일입니다. 경로를 다시 확인후 시도하십시오.</span><br /><br /><br />
 
-<input type="button" value="메인으로" onclick="location.href = '/cworldSite/index.jsp'" style="width:150px; height:80px;"/>
+<input type="button" value="메인으로" onclick="location.href = 'http://218.49.83.7:25565/cworldSite/'" style="width:150px; height:80px;"/>
 </div>
 </body>
 </html>

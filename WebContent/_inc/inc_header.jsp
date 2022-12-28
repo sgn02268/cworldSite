@@ -15,6 +15,7 @@ if (loginInfo != null && loginInfo.getMi_status().equals("b") && !request.getReq
 }
 String url = request.getParameter("url");
 if (url == null) url= "index.jsp";
+boolean isOpen = true;
 %>
 <%@ include file="../_inc/inc_sidebar2.jsp" %>
 <!DOCTYPE html>

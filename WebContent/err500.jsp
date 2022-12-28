@@ -3,7 +3,7 @@
 <HEAD>
 <TITLE>500 error</TITLE>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
-    <META HTTP-EQUIV=refresh content="3; url=http://localhost:8087/cworldSite/index.jsp">
+    <META HTTP-EQUIV=refresh content="2; url=http://localhost:8088/cworldSite/index.jsp">
 	<!-- 3초 후 이동 -->
 <style>
 table { position:absolute; top:0; right:0; left:0; bottom:0; margin:auto; text-align:center; }

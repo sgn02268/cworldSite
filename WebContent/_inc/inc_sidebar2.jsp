@@ -15,7 +15,7 @@ request.setCharacterEncoding("utf-8");
 <style>
 #sideMenu { 
       width:200px; height:100%; z-index:10001;
-      position:fixed; top:0px; right:0px; background:#656565;
+      position:fixed; top:0px; right:-200px; background:#656565;
       background:rgba(0, 0, 0, 0.5); color:#fff;
    }
 #sideMenu ul { 
@@ -44,16 +44,16 @@ request.setCharacterEncoding("utf-8");
 <script>
 $(document).ready(function(){
 	$("#btnMenu").click(function(){
-		$("#sideMenu").toggleClass("close");
+		$("#sideMenu").toggleClass("open");
 		// #sideMenu 객체에 'open' 이라는 클래스를 이벤트 발생시 마다 추가와 삭제를 번갈아가면서 실행
-		if($("#sideMenu").attr("class") == "close"){
+		if($("#sideMenu").attr("class") == "open"){
 		// if ($("#sideMenu").hasClass("open") { // 으로 쓰는것이 간편
-			$("#imgMenu").attr("src", "/cworldSite/img/left_open.png");
-			$("#sideMenu").animate({right:"-200px"}, 300);
-		}
-		else {
 			$("#imgMenu").attr("src", "/cworldSite/img/left_close.png");
 			$("#sideMenu").animate({right:0 }, 300);
+	
+		} else {
+			$("#imgMenu").attr("src", "/cworldSite/img/left_open.png");
+			$("#sideMenu").animate({right:"-200px"}, 300);
 		}
 	});
 });
@@ -76,6 +76,10 @@ $(document).ready(function(){
 		}
 	});
 });
+if ($.cookie('click') =='close') {
+	$("#imgMenu").attr("src", "/cworldSite/img/left_open.png");
+	  console.log($.cookie("click"))
+}
 </script>
 </head>
 <body>
@@ -128,7 +132,8 @@ $(document).ready(function(){
 		<br/>머니은행<br/>	222-333-444444</li>
 		
 	</ul>
-	<button id="btnMenu"><img src="/cworldSite/img/left_close.png" id="imgMenu" width="30"/></button>
+	<button id="btnMenu"><img src="/cworldSite/img/left_open.png" id="imgMenu" width="30"/></button>
+	<%  %>
 </div>
 </body>
 </html>
